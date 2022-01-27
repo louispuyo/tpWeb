@@ -1,0 +1,54 @@
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    background-color: black;
+}
+
+header {
+    color: green;
+    font-size: 50px;
+    margin: auto;
+}
+
+@font-face {
+    font-family: "Title";
+    src: url("fonts/BN-Snake.ttf");
+}
+
+@font-face {
+    font-family: "Score";
+    src: url("fonts/data-latin.ttf");
+}
+
+header #title {
+    font-family: Title;
+}
+
+header #score {
+    font-family: Score;
+}
+
+.grille {
+    background-color: black;
+    height: 20px;
+    width: 700px;
+    margin: auto;
+}
+
+.cell {
+    /* background-color: chartreuse; */
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    float: left;
+    position: relative;
+    border: solid green 1px;
+}
+
+@keyframes left {}
