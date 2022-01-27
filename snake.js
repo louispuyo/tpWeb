@@ -44,9 +44,22 @@ function createSnake() {
 }
 
 
+
 createSnake();
 
+i = 1;
 
-function updateColor(snake) {
+function updateColor(i) {
+
+    grid[10][i].style.backgroundColor = 'red';
+    grid[10][i].style.backgroundColor = 'red';
+    grid[10][i - 1].style.backgroundColor = 'black';
+
 
 }
+
+
+setInterval(function() {
+    i++;
+    updateColor(i)
+}, 500);
